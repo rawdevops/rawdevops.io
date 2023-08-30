@@ -86,17 +86,36 @@ const config = {
         },
         items: [
           {
+            href: 'https://github.com/rawdevops',
+            'aria-label': 'GitHub repository',
+            position: 'right',
+            className: 'navbar-github-link',
+          },
+          {
+            href: 'https://www.instagram.com/rawdevopsbrasil/',
+            'aria-label': 'Instagram',
+            position: 'right',
+            className: 'navbar-instagram-link',
+          },
+          {
+            href: 'https://www.linkedin.com/company/rawdevopsbrasil',
+            'aria-label': 'LinkedIn',
+            position: 'right',
+            className: 'navbar-linkedin-link',
+          },
+          {
+            href: 'https://www.youtube.com/@rawdevops',
+            'aria-label': 'YouTube',
+            position: 'right',
+            className: 'navbar-youtube-link',
+          },
+          {
             type: 'doc',
-            docId: 'intro',
+            docId: 'Bootcamp/welcome',
             position: 'right',
             label: 'Bootcamp',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
         ],
       },
       footer: {
@@ -160,14 +179,14 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      // announcementBar: {
-      //   id: 'desconto',
-      //   content:
-      //     '20% de desconto usando o Cupom RAWDEVOPS ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="#">20% OFF</a>',
-      //   backgroundColor: '#480058',
-      //   textColor: '#FFFFFF',
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        id: 'desconto',
+        content:
+          '20% de desconto usando o Cupom RAWDEVOPS ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">20% OFF</a>',
+        backgroundColor: '#480058',
+        textColor: '#FFFFFF',
+        isCloseable: false,
+      },
     }),
 };
 

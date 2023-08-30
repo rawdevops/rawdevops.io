@@ -20,14 +20,14 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <a href="google.com"> <img src="img/RAW-DevOps-Logo.png" align="right" alt="docusaurus mascot" height="400" width="650" /> </a> <br></br><br></br>
+        <a href=""> <img src="img/RAW-DevOps-Logo.png" align="right" alt="docusaurus mascot" height="400" width="650" /> </a> <br></br><br></br>
         <h1 className="hero__title"><img src="img/Bootcamp.png" align="center" alt="docusaurus mascot" height="125" width="175" /></h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://forms.gle/KZDfBm3hQud4VYa69">
-            Live de Lançamento dia 05/08/2023
+            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">
+            COMPRE NOSSO CURSO COM 20% OFF
           </Link>
         </div>
         <div className={styles.buttons}>
@@ -75,12 +75,12 @@ function MigrationAnnouncement() {
           <Translate
             values={{
               docusaurusV1Link: (
-                <Link to="https://forms.gle/KZDfBm3hQud4VYa69">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">
                   <Translate>ciclo DevOps começo ao fim do absoluto zero!</Translate>
                 </Link>
               ),
               migrationGuideLink: (
-                <Link to="https://forms.gle/KZDfBm3hQud4VYa69">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">
                   <Translate>uma implantação real</Translate>
                 </Link>
               ),

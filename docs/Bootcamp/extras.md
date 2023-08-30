@@ -17,7 +17,14 @@ Eu so fã deste livro e recomendo a todos, com certeza irá esclarecer você sob
 
 **Boa leitura a todos.**
 
+## Pãozinha a Gatinha do Instrutor
+
+![Paozinha](../../static/img/docsImages/GatinhaInstrutor.jpeg)
+
+OII! Sou a pãozinha a Gatinha do Instrutor se você me escutar em alguma aula eu so queria um cafunezinho 🐱
+
 **Sucesso a todos vocês! E o meu muito obrigado novamente!**
 
 > "Coragem - qualquer coisa capaz de iluminar deve resistir ao calor da luz."
 >> Código de Um Cavaleiro
+
