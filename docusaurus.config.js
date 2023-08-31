@@ -86,6 +86,12 @@ const config = {
         },
         items: [
           {
+            href: 'https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS',
+            'aria-label': 'Udemy',
+            position: 'right',
+            className: 'navbar-udemy-link',
+          },
+          {
             href: 'https://github.com/rawdevops',
             'aria-label': 'GitHub repository',
             position: 'right',

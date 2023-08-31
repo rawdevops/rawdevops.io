@@ -17,9 +17,9 @@ const Card = ({ title, body }: CardProps): JSX.Element => {
           flexDirection: "column",
           cursor: "pointer",
           alignItems: "center",
-          backgroundColor: "#000000",
+          backgroundColor: "#fffffff",
           borderRadius: "0", 
-          color: "#ffffff",
+          color: "#000000",
           textAlign: "center",
           fontSize: "18px",
         }}

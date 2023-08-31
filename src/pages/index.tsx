@@ -95,15 +95,15 @@ function MigrationAnnouncement() {
 
 function MigrationAnnouncement2() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--secondary', styles.heroBanner)}>
       <div
-        className={clsx(styles.announcement2, styles.announcementDark)}
-        data-theme="dark">
+        className={clsx(styles.announcement2, styles.announcementLight)}
+        data-theme="light">
         <div className={styles.announcementInner}>
           <Translate
             values={{
             }}>
-            {`Perguntas frequentes.`}
+            {`FAQ`}
           </Translate>
         </div>
       </div>
@@ -141,6 +141,75 @@ function QuotesSection() {
   );
 }
 
+function Tweet({ handle, name, content, avatar }) {
+  return (
+    <div className={clsx('card', styles.tweet)} style={{ marginTop: '2rem' }}>
+      <div className="card__header">
+        <div className="avatar">
+          <a href="https://www.udemy.com/course/raw-devops-bootcamp/#reviews" className="avatar__link">
+            <img alt={name} className="avatar__photo" src={avatar} />
+          </a>
+          <div className="avatar__intro">
+            <div className={styles.tweet}>
+              <strong>{name}</strong>{' '}
+              <br></br>
+              <span className={styles.tweetMeta}>
+                {handle}
+              </span>
+            </div>
+            <div>{content}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function TweetsSection() {
+  return (
+    <div className={clsx('padding-vert--xl', styles.sectionAlt)}>
+      <div className="container">
+        <h2
+          className={clsx(
+            'margin-btm--lg',
+            'text--center',
+            styles.sectionTitle,
+          )}
+          style={{ color: 'white' }}>
+          Avaliações dos Alunos
+        </h2>
+        <div className={clsx('row', styles.tweetsSection)}>
+          <div className="col col--4">
+            <Tweet
+              handle="⭐⭐⭐⭐⭐"
+              name="Magdiel Augusto"
+              avatar="/img/tweets/udemy-logo.png"
+              content={
+                <>
+                  O curso está incrivel! A didática do Paulo Santiago é muito boa, o passo a passo dos procedimentos que precisam ser realizados é bem intuitiva, explicação simples e clara. Vale muito a pena, nunca tinha feito um curso tão completo como esse, sem duvidas o mais completo da Udemy!
+                </>
+              }
+            />
+          </div>
+          <div className="col col--4">
+            <Tweet
+              handle="⭐⭐⭐⭐⭐"
+              name="Allan Cordeiro"
+              avatar="/img/tweets/udemy-logo.png"
+              content={
+                <>
+                  Curso fera demais galera, vale a pena o investimento, é bem fora do padrão e bem prático.
+                </>
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -152,10 +221,11 @@ export default function Home(): JSX.Element {
       <main>
         <VideoContainer />
         <HomepageFeatures />
-        <MigrationAnnouncement />
-        <QuotesSection />
+        <TweetsSection />
         <MigrationAnnouncement2 />
         <FAQ />
+        <MigrationAnnouncement />
+        <QuotesSection />
       </main>
     </Layout>
   );
