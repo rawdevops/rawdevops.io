@@ -57,10 +57,10 @@
   color: #000000;
   /* Reapply the primary color, because it has been locally overridden as
    * the dark theme color */
-  --ifm-link-color: var(--ifm-color-secondary5);
+  --ifm-link-color: var(--ifm-color-secondary);
 }
 
 .announcementInner {
   margin: 0 auto;
   max-width: 768px;
-}42
+}
