@@ -204,6 +204,18 @@ function TweetsSection() {
               }
             />
           </div>
+          <div className="col col--4">
+            <Tweet
+              handle="⭐⭐⭐⭐⭐"
+              name="Joao Pedro S."
+              avatar="/img/tweets/udemy-logo.png"
+              content={
+                <>
+                  Excelente didática e conteúdo abrangente! Este curso é uma verdadeira joia para quem busca aprofundar seus conhecimentos em DevOps. Além de oferecer um aprendizado sólido, tive a oportunidade de esclarecer dúvidas que já me intrigavam antes mesmo de iniciar o curso. A abordagem é simples, direta e eficaz, deixando nada a desejar. Cada tópico é minuciosamente explorado, desde os fundamentos até os aspectos mais avançados, garantindo que os alunos estejam preparados para os desafios reais do campo DevOps.
+                </>
+              }
+            />
+          </div>
         </div>
       </div>
     </div>
