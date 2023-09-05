@@ -227,7 +227,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title} - End-to-end DevOps`}
-      description="Learn building real things <head />">
+      description="Modern infrastructure trainings and consulting">
       <HomepageHeader />
       <LogoSlider />
       <main>

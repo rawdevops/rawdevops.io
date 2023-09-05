@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'RAW DevOps',
   tagline: 'Bootcamp com imersão completa no mundo DevOps',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logofavicon.png',
 
   // Set the production url of your site here
   url: 'https://rawdevops.io',
@@ -82,7 +82,7 @@ const config = {
         title: 'RAW DevOps',
         logo: {
           alt: 'rawdevopslogo',
-          src: 'img/logo.png',
+          src: 'img/logoFlower.png',
         },
         items: [
           {
