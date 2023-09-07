@@ -26,7 +26,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">
+            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN">
             COMPRE NOSSO CURSO COM 20% OFF
           </Link>
         </div>
@@ -75,12 +75,12 @@ function MigrationAnnouncement() {
           <Translate
             values={{
               docusaurusV1Link: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN">
                   <Translate>ciclo DevOps começo ao fim do absoluto zero!</Translate>
                 </Link>
               ),
               migrationGuideLink: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPS">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN">
                   <Translate>uma implantação real</Translate>
                 </Link>
               ),
@@ -191,6 +191,16 @@ function TweetsSection() {
                 </>
               }
             />
+                        <Tweet
+              handle="⭐⭐⭐⭐⭐"
+              name="Everson B."
+              avatar="/img/tweets/udemy-logo.png"
+              content={
+                <>
+                  Curso 1000 estrelas!!! Só agradecer ao professor pelas técnicas repassadas com precisão!!! Valeu mesmo!!!! Só aguardando os próximos bootcamps. =D
+                </>
+              }
+            />
           </div>
           <div className="col col--4">
             <Tweet
@@ -200,6 +210,16 @@ function TweetsSection() {
               content={
                 <>
                   Curso fera demais galera, vale a pena o investimento, é bem fora do padrão e bem prático.
+                </>
+              }
+            />
+            <Tweet
+              handle="⭐⭐⭐⭐⭐"
+              name="Italo Rafael"
+              avatar="/img/tweets/udemy-logo.png"
+              content={
+                <>
+                  Curso bastante intenso, com um excelente conteúdo. Parabéns pela didática. Cumpre o que promete. Aguardando os próximos cursos.
                 </>
               }
             />
