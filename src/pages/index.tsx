@@ -111,6 +111,51 @@ function MigrationAnnouncement2() {
   );
 }
 
+function MigrationAnnouncementPromo() {
+  return (
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className={clsx(styles.announcement, styles.announcementDark)} data-theme="dark">
+        <div className={styles.gifContainer}>
+          <img
+            className={styles.gifLeft}
+            src="/img/docsImages/seta1.gif"
+            alt="Left GIF"
+          />
+          <div className={styles.centerImageContainer}>
+            <a href="https://rawdevops.io/docs/devopsdaysfloripa" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/img/docsImages/devopsdaysfloripa3.png"
+                alt="Promoção DevOpsDaysFloripa"
+                className={styles.centerImage}
+              />
+            </a>
+          </div>
+          <img
+            className={styles.gifRight}
+            src="/img/docsImages/seta2.gif"
+            alt="Right GIF"
+          />
+        </div>
+        <div className={styles.announcementInner}>
+          <Translate
+            values={{
+              docusaurusV1Link: (
+                <Link to="https://rawdevops.io/docs/devopsdaysfloripa">
+                  <Translate>Clique na Imagem</Translate>
+                </Link>
+              ),
+            }}
+          >
+            {` {docusaurusV1Link} `}
+          </Translate>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+
+
 function QuotesSection() {
   return (
     <div className={clsx(styles.section)}>
@@ -191,7 +236,7 @@ function TweetsSection() {
                 </>
               }
             />
-                        <Tweet
+            <Tweet
               handle="⭐⭐⭐⭐⭐"
               name="Everson B."
               avatar="/img/tweets/udemy-logo.png"
@@ -251,6 +296,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <LogoSlider />
       <main>
+        <MigrationAnnouncementPromo />
         <VideoContainer />
         <HomepageFeatures />
         <TweetsSection />

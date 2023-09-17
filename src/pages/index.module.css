@@ -64,3 +64,32 @@
   margin: 0 auto;
   max-width: 768px;
 }
+
+.gifContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifLeft, .gifRight {
+  width: 20%; /* Adjust the width as a percentage of the parent container */
+  margin: 0 5px; /* Adjust the margin as needed */
+}
+
+.centerImageContainer {
+  display: inline-block;
+  max-width: 70%; /* Adjust the max-width as needed */
+  text-align: center;
+}
+
+.centerImage {
+  width: 100%; /* Ensure image takes the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjustments for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .gifLeft, .gifRight {
+    width: 30%; /* Adjust the width for smaller screens */
+  }
+}
