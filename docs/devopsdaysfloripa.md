@@ -20,7 +20,7 @@ title: 'Promoção: a vida é dura mas a praia é mole'
 
 Já pensou ir em um dos eventos DevOpsDays com tudo pago?
 
-Vamos dar essa oportunidade incrível para um dos nossos alunos e que ainda está se graduando em TI e ajuda-los neste momento inicial de suas carreiras. Eventos como este vão te trazer para o que há de mais moderno na área com experiências reais compartilhadas de palestrantes das maiores empresas do país. Uma experiencia que pode mudar a carreira de alguém iniciante e também agregar muito ao currículo.
+Vamos dar essa oportunidade incrível para um dos nossos alunos e ajuda-los em suas carreiras. Eventos como este vão te trazer para o que há de mais moderno na área com experiências reais compartilhadas de palestrantes das maiores empresas do país. Uma experiencia que pode mudar a carreira de alguém iniciante e também agregar muito ao currículo.
 
 E não menos importante ainda visitar Florianópolis \o/
 
@@ -29,8 +29,6 @@ Florianópolis é conhecida por ser a "Ilha da Magia", por suas belas praias e s
 E o DevOpsDays é uma série de conferências mundial onde os temas são desenvolvimento de software, operação da infraestrutura de TI e a intersecção entre eles. 
 
 Uma oportunidade incrível de network e aprendizado.
-
-E é claro, ainda haverá aquele certificado participação para lhe ajudar com as horas complementares da sua graduação.
 
 E você sabia que o nosso instrutor será um dos palestrantes? Este é um dos motivos que estamos fazendo esta promoção.
 
@@ -60,8 +58,6 @@ Leia atentamente as informações abaixo e caso ainda persista alguma dúvida no
 ## Regras
 
 - Ter + de 18 anos
-- Estar cursando algum curso superior ou tecnólogo em TI (ex: Sistemas de Informação, Analise e Desenvolvimento de Sistemas, Ciências da Computação, Engenharia de Software, Gestão da Informação, entre outros)
-- O ganhador deverá apresentar o comprovante de matrícula do atual semestre ou comprovante de vínculo
 - Estar disponível para viajar dia 10/11 e retornar dia 12/11, os voos podem partir de qualquer horário nos dias citados, conforme disponibilidade de voos de cada aeroporto
 - Ter comprado nosso curso utilizando cupom de desconto (Ex: RAWDEVOPSFLN, RAWDEVOPS)
 
