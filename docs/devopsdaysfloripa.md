@@ -20,7 +20,7 @@ title: 'Promoção: a vida é dura mas a praia é mole'
 
 Já pensou ir em um dos eventos DevOpsDays com tudo pago?
 
-Vamos dar essa oportunidade incrível para um dos nossos alunos e ajuda-los em suas carreiras. Eventos como este vão te trazer para o que há de mais moderno na área com experiências reais compartilhadas de palestrantes das maiores empresas do país. Uma experiencia que pode mudar a carreira de alguém iniciante e também agregar muito ao currículo.
+Vamos dar essa oportunidade incrível para um dos nossos alunos e ajuda-los em suas carreiras. Eventos como este vão te trazer para o que há de mais moderno na área com experiências reais compartilhadas de palestrantes das maiores empresas do país. Uma experiencia que pode mudar sua carreira e também agregar muito ao currículo.
 
 E não menos importante ainda visitar Florianópolis \o/
 
