@@ -12,7 +12,7 @@ title: 'Promoção: a vida é dura mas a praia é mole'
 
 <center>
 
-[![ButtonPromo1](../static/img/docsImages/button1.png)](https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN)
+[![ButtonPromo1](../static/img/docsImages/button_promocao-encerrada.png)](https://rawdevops.io)
 
 </center>
 
@@ -51,7 +51,7 @@ Leia atentamente as informações abaixo e caso ainda persista alguma dúvida no
 
 <center>
 
-[![ButtonPromo2](../static/img/docsImages/button2.png)](https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN)
+[![ButtonPromo2](../static/img/docsImages/button_promocao-encerrada.png)](https://rawdevops.io)
 
 </center>
 
@@ -63,7 +63,7 @@ Leia atentamente as informações abaixo e caso ainda persista alguma dúvida no
 
 <center>
 
-[![ButtonPromo2](../static/img/docsImages/button2.png)](https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN)
+[![ButtonPromo2](../static/img/docsImages/button_promocao-encerrada.png)](https://rawdevops.io)
 
 </center>
 
@@ -72,8 +72,8 @@ Leia atentamente as informações abaixo e caso ainda persista alguma dúvida no
 
 - Apenas 200 vagas disponíveis para o sorteio com 1 ganhador
 - **Sorteio no próximo sorteio da loteria federal assim que os números forem preenchidos, que ocorrem as quartas e sábado ou dia 11/10/2023**
-- Após a compra do curso e se você esta dentro dos requisitos das regras, preencher o form da promoção: [**https://forms.gle/KBeB9ZyicTgDqisK9**](https://forms.gle/KBeB9ZyicTgDqisK9)
-- Escolher 5 números disponíveis na planilha: [**https://docs.google.com/spreadsheets/d/1JWW38WaJCuJQttom7q4pU42zrwdjMOBg7btWCr8gpx0/edit?usp=sharing**](https://docs.google.com/spreadsheets/d/1JWW38WaJCuJQttom7q4pU42zrwdjMOBg7btWCr8gpx0/edit?usp=sharing)
+- Após a compra do curso e se você esta dentro dos requisitos das regras, preencher o form da promoção: **Promoção Encerrada!**
+- Escolher 5 números disponíveis na planilha: **Promoção Encerrada!**
 - Após o preenchimento do form, o mais breve possível ou em até 1 dia útil, entraremos em contato para a coleta dos números escolhidos, reservar e confirmar os mesmos.
 - Aguardar a reserva e confirmação dos números escolhidos
 - Apos confirmação dos números escolhidos te adicionaremos a um grupo de Whatsapp com todos os 200 participantes, onde vocês serão atualizados sobre o andamento da promoção e o preenchimento das vagas.
@@ -83,6 +83,6 @@ Leia atentamente as informações abaixo e caso ainda persista alguma dúvida no
 
 <center>
 
-[![ButtonPromo3](../static/img/docsImages/button3.png)](https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFLN)
+[![ButtonPromo3](../static/img/docsImages/button_promocao-encerrada.png)](https://rawdevops.io)
 
 </center>
