@@ -116,6 +116,18 @@ const config = {
             className: 'navbar-youtube-link',
           },
           {
+            href: 'https://api.whatsapp.com/send?phone=62982654177',
+            'aria-label': 'Whatsapp',
+            position: 'right',
+            className: 'navbar-whatsapp-link',
+          },
+          {
+            to: "consulting/",
+            activeBasePath: "consulting/",
+            label: "Consultoria",
+            position: "left",
+          },
+          {
             type: 'doc',
             docId: 'Bootcamp/welcome',
             position: 'right',

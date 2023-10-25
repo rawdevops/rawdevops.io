@@ -12,6 +12,7 @@ import FAQ from '@site/src/components/FAQ';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import Heading from '@theme/Heading';
+import { Customers } from "@site/src/components/Customers";
 
 import styles from './index.module.css';
 
@@ -250,6 +251,7 @@ export default function Home(): JSX.Element {
       description="Modern infrastructure trainings and consulting">
       <HomepageHeader />
       <LogoSlider />
+      <Customers />
       <main>
         <VideoContainer />
         <HomepageFeatures />

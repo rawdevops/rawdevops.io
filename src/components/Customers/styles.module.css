@@ -1,0 +1,55 @@
+.used_by {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: 0.0rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .used_by .tagline {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: var(--ifm-font-line-height);
+    letter-spacing: var(--ifm-font-letter-spacing);
+  }
+  
+  .used_by .logoContainer {
+    margin: 0 2rem;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .used_by ul li {
+    margin: 0 0 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .used_by ul li img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    height: 8rem;
+    object-position: 0 50%;
+    cursor: pointer; /* Mudando o cursor para indicar que a imagem é clicável */
+    transition: transform 0.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
+  }
+  
+  .used_by ul li img:hover {
+    transform: scale(1.1); /* Aumenta a escala em 10% ao passar o mouse */
+}
+  /* Adicionado para fundo preto e texto branco */
+  .blackBackground {
+    background-color: black;
+  }
+  
+  .whiteText {
+    color: white;
+  }
+  
