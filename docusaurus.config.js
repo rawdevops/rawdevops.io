@@ -86,7 +86,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSOUT',
+            href: 'https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSNOV',
             'aria-label': 'Udemy',
             position: 'right',
             className: 'navbar-udemy-link',
@@ -200,7 +200,7 @@ const config = {
       announcementBar: {
         id: 'desconto',
         content:
-          '20% de desconto usando o Cupom RAWDEVOPSOUT ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSOUT">20% OFF</a>',
+          '20% de desconto usando o Cupom RAWDEVOPSNOV ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSNOV">20% OFF</a>',
         backgroundColor: '#480058',
         textColor: '#FFFFFF',
         isCloseable: false,
