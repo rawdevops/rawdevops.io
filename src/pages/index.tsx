@@ -27,7 +27,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSDEZ">
+            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
             COMPRE NOSSO CURSO COM 20% OFF
           </Link>
         </div>
@@ -76,12 +76,12 @@ function MigrationAnnouncement() {
           <Translate
             values={{
               docusaurusV1Link: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSDEZ">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
                   <Translate>ciclo DevOps começo ao fim do absoluto zero!</Translate>
                 </Link>
               ),
               migrationGuideLink: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSDEZ">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
                   <Translate>uma implantação real</Translate>
                 </Link>
               ),
