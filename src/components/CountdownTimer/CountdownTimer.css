@@ -1,0 +1,83 @@
+/* CountdownTimer.css */
+
+
+.countdown-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container {
+  text-align: center;
+  text-shadow: 0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a; /* Aumenta o efeito de sombra */
+  color: #ff5e3a;
+}
+
+.logos-timer-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 500px;
+  margin: 0 10px; /* Ajuste a margem conforme necessário */
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer-item {
+  color: #ffffff;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+.timer-item span:first-child {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.timer-value-container {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espaçamento entre timer-value e timer-label */
+}
+
+.timer-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a; /* Aumenta o efeito de sombra */
+  color: #ff5e3a;
+}
+
+
+.timer-label {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 5px; /* Espaçamento entre timer-value e timer-label */
+  text-shadow: 0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a; /* Aumenta o efeito de sombra */
+  color: #ff5e3a;
+
+}
+
+.timer-separator {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 0 5px;
+  align-self: baseline;
+   text-shadow: 0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a; /* Aumenta o efeito de sombra */
+  color: #ff5e3a;
+}

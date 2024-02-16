@@ -13,6 +13,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import Heading from '@theme/Heading';
 import { Customers } from "@site/src/components/Customers";
+import CountdownTimer from "@site/src/components/CountdownTimer"; 
 
 import styles from './index.module.css';
 
@@ -243,6 +244,14 @@ function TweetsSection() {
   );
 }
 
+function CountdownTimer2() {
+  return (
+    <div>
+      <CountdownTimer targetDate="2024-04-07" />
+    </div>
+  );
+} 
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -251,6 +260,7 @@ export default function Home(): JSX.Element {
       description="Modern infrastructure trainings and consulting">
       <HomepageHeader />
       <LogoSlider />
+      <CountdownTimer2 />
       <Customers />
       <main>
         <VideoContainer />
