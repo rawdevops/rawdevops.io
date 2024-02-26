@@ -1,248 +1,18 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Quotes from '@site/src/components/Quotes';
-import Image from '@theme/IdealImage';
-import Translate, { translate } from '@docusaurus/Translate';
-import LogoSlider from '@site/src/components/LogoSlider';
-import FAQ from '@site/src/components/FAQ';
-import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import Heading from '@theme/Heading';
-import { Customers } from "@site/src/components/Customers";
-import CountdownTimer from "@site/src/components/CountdownTimer"; 
-
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <a href=""> <img src="img/RAW-DevOps-Logo.png" align="right" alt="docusaurus mascot" height="400" width="650" /> </a> <br></br><br></br>
-        <h1 className="hero__title"><img src="img/Bootcamp.png" align="center" alt="docusaurus mascot" height="125" width="175" /></h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
-            COMPRE NOSSO CURSO COM 20% OFF
-          </Link>
-        </div>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Bootcamp/modulo1">
-            Documentação Bootcamp
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-function VideoContainer() {
-  return (
-    <div className="container text--center margin-bottom--xl">
-      <div className="row">
-        <div className="col">
-          <Heading as="h2">
-            <Translate> </Translate>
-          </Heading>
-          <div className="video-container">
-            <LiteYouTubeEmbed
-              id="nye4IonaWpM"
-              params="autoplay=1&autohide=1&showinfo=0&rel=0"
-              title="RAW DevOps Bootcamp"
-              poster="maxresdefault"
-              webp
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function MigrationAnnouncement() {
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div
-        className={clsx(styles.announcement, styles.announcementDark)}
-        data-theme="dark">
-        <div className={styles.announcementInner}>
-          <Translate
-            values={{
-              docusaurusV1Link: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
-                  <Translate>ciclo DevOps começo ao fim do absoluto zero!</Translate>
-                </Link>
-              ),
-              migrationGuideLink: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
-                  <Translate>uma implantação real</Translate>
-                </Link>
-              ),
-            }}>
-            {`O nosso diferencial é implantar um {docusaurusV1Link} Este roadmap foi cuidadosamente pensado para te preparar para o mercado com {migrationGuideLink}.`}
-          </Translate>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-function MigrationAnnouncement2() {
-  return (
-    <header className={clsx('hero hero--secondary', styles.heroBanner)}>
-      <div
-        className={clsx(styles.announcement2, styles.announcementLight)}
-        data-theme="light">
-        <div className={styles.announcementInner}>
-          <Translate
-            values={{
-            }}>
-            {`FAQ`}
-          </Translate>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-function QuotesSection() {
-  return (
-    <div className={clsx(styles.section)}>
-      <div className="container">
-        <div className="row">
-          {Quotes.map((quote) => (
-            <div className="col" key={quote.name}>
-              <div className="avatar avatar--vertical margin-bottom--sm">
-                <Image
-                  alt={quote.name}
-                  className="avatar__photo avatar__photo--xl"
-                  img={quote.thumbnail}
-                  style={{ overflow: 'hidden' }}
-                />
-                <div className="avatar__intro padding-top--sm">
-                  <div className="avatar__name">{quote.name}</div>
-                  <small className="avatar__subtitle">{quote.title}</small>
-                </div>
-              </div>
-              <p className="text--center text--italic padding-horiz--md">
-                {quote.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Tweet({ handle, name, content, avatar }) {
-  return (
-    <div className={clsx('card', styles.tweet)} style={{ marginTop: '2rem' }}>
-      <div className="card__header">
-        <div className="avatar">
-          <a href="https://www.udemy.com/course/raw-devops-bootcamp/#reviews" className="avatar__link">
-            <img alt={name} className="avatar__photo" src={avatar} />
-          </a>
-          <div className="avatar__intro">
-            <div className={styles.tweet}>
-              <strong>{name}</strong>{' '}
-              <br></br>
-              <span className={styles.tweetMeta}>
-                {handle}
-              </span>
-            </div>
-            <div>{content}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-
-function TweetsSection() {
-  return (
-    <div className={clsx('padding-vert--xl', styles.sectionAlt)}>
-      <div className="container">
-        <h2
-          className={clsx(
-            'margin-btm--lg',
-            'text--center',
-            styles.sectionTitle,
-          )}
-          style={{ color: 'white' }}>
-          Avaliações dos Alunos
-        </h2>
-        <div className={clsx('row', styles.tweetsSection)}>
-          <div className="col col--4">
-            <Tweet
-              handle="⭐⭐⭐⭐⭐"
-              name="Magdiel Augusto"
-              avatar="/img/tweets/udemy-logo.png"
-              content={
-                <>
-                  O curso está incrivel! A didática do Paulo Santiago é muito boa, o passo a passo dos procedimentos que precisam ser realizados é bem intuitiva, explicação simples e clara. Vale muito a pena, nunca tinha feito um curso tão completo como esse, sem duvidas o mais completo da Udemy!
-                </>
-              }
-            />
-            <Tweet
-              handle="⭐⭐⭐⭐⭐"
-              name="Everson B."
-              avatar="/img/tweets/udemy-logo.png"
-              content={
-                <>
-                  Curso 1000 estrelas!!! Só agradecer ao professor pelas técnicas repassadas com precisão!!! Valeu mesmo!!!! Só aguardando os próximos bootcamps. =D
-                </>
-              }
-            />
-          </div>
-          <div className="col col--4">
-            <Tweet
-              handle="⭐⭐⭐⭐⭐"
-              name="Allan Cordeiro"
-              avatar="/img/tweets/udemy-logo.png"
-              content={
-                <>
-                  Curso fera demais galera, vale a pena o investimento, é bem fora do padrão e bem prático.
-                </>
-              }
-            />
-            <Tweet
-              handle="⭐⭐⭐⭐⭐"
-              name="Italo Rafael"
-              avatar="/img/tweets/udemy-logo.png"
-              content={
-                <>
-                  Curso bastante intenso, com um excelente conteúdo. Parabéns pela didática. Cumpre o que promete. Aguardando os próximos cursos.
-                </>
-              }
-            />
-          </div>
-          <div className="col col--4">
-            <Tweet
-              handle="⭐⭐⭐⭐⭐"
-              name="Joao Pedro S."
-              avatar="/img/tweets/udemy-logo.png"
-              content={
-                <>
-                  Excelente didática e conteúdo abrangente! Este curso é uma verdadeira joia para quem busca aprofundar seus conhecimentos em DevOps. Além de oferecer um aprendizado sólido, tive a oportunidade de esclarecer dúvidas que já me intrigavam antes mesmo de iniciar o curso. A abordagem é simples, direta e eficaz, deixando nada a desejar. Cada tópico é minuciosamente explorado, desde os fundamentos até os aspectos mais avançados, garantindo que os alunos estejam preparados para os desafios reais do campo DevOps.
-                </>
-              }
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+// import LogoSlider from "@site/src/components/LogoSlider";
+import CountdownTimer from "../components/CountdownTimer";
+import { Customers } from "../components/Customers";
+import FAQBody from "./FAQCard";
+//@ts-ignore
+import bootCampImage from "../../static/img/Bootcamp.png";
+//@ts-ignore
+import sigNozGif from "../../static/img/countdown/signoz.gif";
+import Card from "../components/Card";
+import { TweetsSection } from "./bootcamp";
+import { styled } from "@mui/material";
+import { FaqPAGE } from "./signoz/styles/styles";
 
 function CountdownTimer2() {
   return (
@@ -250,26 +20,155 @@ function CountdownTimer2() {
       <CountdownTimer targetDate="2024-04-07" />
     </div>
   );
-} 
+}
 
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+const Courses = () => {
+  const ResponsiveDiv = styled("div") ({
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "30px",
+    "@media (max-width: 768px)": {
+      gridTemplateColumns: "1fr",
+    },
+  });
   return (
-    <Layout
-      title={`${siteConfig.title} - End-to-end DevOps`}
-      description="Modern infrastructure trainings and consulting">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backgroundColor: "#000000",
+        paddingTop: "50px",
+        paddingBottom: "50px",
+      }}
+    >
+      <h1
+        style={{
+          color: "#fff",
+          marginBottom: "50px",
+        }}
+      >
+        Nossos Cursos
+      </h1>
+      <ResponsiveDiv>
+        <Card
+          available
+          title="DevOps Bootcamp"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          image={bootCampImage}
+          href={"/bootcamp"}
+          docHref="/docs/Bootcamp/welcome"
+        />
+        <Card
+          title="SigNoz"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          image={sigNozGif}
+          href={"/signoz"}
+        />
+      </ResponsiveDiv>
+    </div>
+  );
+};
+
+function HomepageHeader() {
+  const TitleText = styled("h1")({
+    fontSize: "3rem",
+  });
+
+  const SubText = styled("h3")({
+    fontSize: "1.5rem",
+    margin: "0",
+  });
+
+  const ButtonHome = styled("button")({
+    color: "#ff5e3a",
+    backgroundColor: "#000000",
+    fontWeight: "semibold",
+    width: "30%",
+    paddingBottom: "0.5rem",
+    borderRadius: "12px",
+    height: "3.5rem",
+    border: "1px solid #797979",
+    textShadow: "0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a",
+    transition: "0.5s",
+    "&:hover": {
+      backgroundColor: "#797979",
+    },
+    "@media (max-width: 768px)": {
+      fontSize: "0.9rem", // Adjust font size for smaller screens
+      width: "100%",
+    },
+  });
+  return (
+    <header
+      style={{
+        padding: "32px",
+        backgroundColor: "#000000",
+      }}
+      className={clsx("hero hero--primary")}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
+          alignItems: "center",
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        <TitleText>
+        Treinamentos e consultoria em Infraestrutura Moderna de TI
+        </TitleText>
+        <SubText>
+          Cloud, containers, observabilidade completa poderosa e serverless.
+        </SubText>
+        <ButtonHome>
+          <SubText>Comece Já!!</SubText>
+        </ButtonHome>
+      </div>
+    </header>
+  );
+}
+
+const faq = [
+  {
+    title: "Este curso serve também para desenvolvedores?",
+    description:
+      "Sim, o curso pode ser feito por devs interessados no assunto, que desejam por exemplo não ficar perdido em reuniões sobre assunto e ter o entendimento do que um DevOps faz. O curso pode ser feito também para devs que desejam migrar para DevOps. Ou até mesmo incrementar o currículo aprendendo DevOps",
+  },
+  {
+    title:
+      "Haverá um certificado de conclusão para adicionar o mesmo no Linkedin?",
+    description:
+      "Sim, após a conclusão do curso na plataforma da Udemy você poderá gerar um certificado de conclusão",
+  },
+  {
+    title: "Pode fazer este curso sem nenhum conhecimento em DevOps?",
+    description:
+      "Sim, inclusive recomendo este curso pois com ele estará mais proximo a realidade cobrada pelo mercado.",
+  },
+  {
+    title: "Quais as opções de pagamento do curso?",
+    description:
+      "O pagamento do curso é gerenciado pela Udemy. Assim a plataforma aceita, pix, cartão de credito, boleto entre outros.",
+  },
+  {
+    title: "Há possibilidade de reeembolso caso eu não goste do conteúdo?",
+    description: "Sim, seguindo as regras e políticas da Udemy.",
+  },
+];
+
+export default function Home() {
+  return (
+    <Layout>
       <HomepageHeader />
-      <LogoSlider />
       <CountdownTimer2 />
+      <Courses />
       <Customers />
+      <TweetsSection />
       <main>
-        <VideoContainer />
-        <HomepageFeatures />
-        <TweetsSection />
-        <MigrationAnnouncement2 />
-        <FAQ />
-        <MigrationAnnouncement />
-        <QuotesSection />
+        <FaqPAGE list={faq} />
       </main>
     </Layout>
   );

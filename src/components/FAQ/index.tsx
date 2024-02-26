@@ -18,7 +18,7 @@ const FAQBody = () => (
     />
     <Card
       body="O pagamento do curso é gerenciado pela Udemy. Assim a plataforma aceita, pix, cartão de credito, boleto entre outros."
-      title="Qual as opções de pagamento do curso?"
+      title="Quais as opções de pagamento do curso?"
     />
     <Card
       body="Sim, seguindo as regras e políticas da Udemy."

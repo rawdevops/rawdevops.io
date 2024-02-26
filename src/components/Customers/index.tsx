@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
+import { WhatsApp } from "@mui/icons-material";
 
 const COMPANIES = [
   { image: "/img/consulting/integrasfacil-logo.png", imageDesc: "integrasfacil logo", link: "/consulting/integrasfacil" },
@@ -28,6 +29,17 @@ export const Customers = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div style={{
+        padding: "1rem",
+        textAlign: "center",
+        backgroundColor: "#000000",
+        color: "#ffffff",
+      }}>
+        <div className={styles.buttonWhatsapp} onClick={() => window.open("/consulting", "_blank")}>
+          <WhatsApp />
+          FALE COM UM CONSULTOR
+        </div>
       </div>
     </section>
   );
