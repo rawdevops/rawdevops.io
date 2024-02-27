@@ -139,7 +139,7 @@ export const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
     description: string;
   }
 
-  export const FaqPAGE = ({ list }: { list: FaqProps[] }) => {
+  const FaqPAGE = ({ list }: { list: FaqProps[] }) => {
     return (
       <header
         style={{
@@ -178,3 +178,5 @@ export const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
       </header>
     );
   };
+
+  export default FaqPAGE;

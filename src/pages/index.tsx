@@ -13,9 +13,9 @@ import sigNozGif from "../../static/img/countdown/signoz.gif";
 import AvatarImg from "../../static/img/CardAvatar.png";
 import Card from "../components/Card";
 import { TweetsSection } from "./bootcamp";
-import { styled } from "@mui/material";
-import { FaqPAGE } from "./signoz/styles/styles";
-
+import { ButtonProps, styled } from "@mui/material";
+import FaqPAGE  from "./signoz/styles/styles";
+import {Button} from "@mui/material";
 
 function CountdownTimer2() {
   return (
@@ -26,7 +26,7 @@ function CountdownTimer2() {
 }
 
 const Courses = () => {
-  const ResponsiveDiv = styled("div") ({
+  const ResponsiveDiv = styled("div")({
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     gap: "30px",
@@ -36,6 +36,7 @@ const Courses = () => {
   });
   return (
     <div
+      id="courses"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -85,7 +86,7 @@ function HomepageHeader() {
     margin: "0",
   });
 
-  const ButtonHome = styled("button")({
+  const ButtonHome = styled(Button)<ButtonProps>(({ theme }) => ({
     color: "#ff5e3a",
     backgroundColor: "#000000",
     fontWeight: "semibold",
@@ -104,7 +105,7 @@ function HomepageHeader() {
       fontSize: "0.9rem", // Adjust font size for smaller screens
       width: "100%",
     },
-  });
+  }));
   return (
     <header
       style={{
@@ -124,13 +125,15 @@ function HomepageHeader() {
         }}
       >
         <TitleText>
-        Treinamentos e consultoria em Infraestrutura Moderna de TI
+          Treinamentos e consultoria em Infraestrutura Moderna de TI
         </TitleText>
         <SubText>
           Cloud, containers, observabilidade completa poderosa e serverless.
         </SubText>
         <ButtonHome>
-          <SubText>Comece Já!!</SubText>
+          <a href="#courses">
+            <SubText>Comece Já!!</SubText>
+          </a>
         </ButtonHome>
       </div>
     </header>
@@ -169,7 +172,7 @@ export default function Home() {
   return (
     <Layout>
       <HomepageHeader />
-      <CountdownTimer2 />
+      {/* <CountdownTimer2 /> */}
       <Courses />
       <Customers />
       <TweetsSection />
