@@ -143,53 +143,70 @@ const config = {
       },
       footer: {
         style: "dark",
-        // logo: {
-        //   alt: 'Meta Open Source Logo',
-        //   src: 'img/logo.png',
-        //   href: 'https://opensource.fb.com',
-        //   width: 160,
-        //   height: 51,
-        // },
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: "Cursos",
+            items: [
+              {
+                label: "Bootcamp DevOps",
+                to: "/bootcamp",
+              },
+              {
+                label: "SigNoz",
+                to: "/signoz",
+              },
+            ],
+          },
+          {
+            title: "Nossas Redes",
+            items: [
+              {
+                label: "Udemy",
+                href: "https://www.udemy.com/user/rawdevopsio/",
+              },
+              {
+                label: "YouTube",
+                href: "https://www.youtube.com/@rawdevopsbrasil",
+              },
+              {
+                label: "Linkedin",
+                href: "https://www.linkedin.com/company/rawdevopsbrasil/",
+              },
+              {
+                label: "Instagram",
+                href: "https://www.instagram.com/rawdevopsbrasil",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/rawdevops",
+              },
+              {
+                label: "TikTok",
+                href: "https://www.tiktok.com/@rawdevops",
+              },
+            ],
+          },
+          {
+            title: "Fale Conosco",
+            items: [
+              {
+                html: `
+                <a href="https://api.whatsapp.com/send?phone=62982654177" class="buttonFooter">
+                  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+                  Chamar no WhatsApp
+                </a>
+              `,
+              },
+              {
+                html: `
+                <a href="mailto:emailraw@gmail.com" class="buttonFooter">
+                  <img src="https://img.icons8.com/color/48/000000/email.png" alt="Email" />
+                  Enviar um Email
+                </a>
+              `,
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} RAW DevOps, Ltda. Made with docusaurus.io ❤️`,
       },

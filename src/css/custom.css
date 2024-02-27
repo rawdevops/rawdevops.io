@@ -31,6 +31,36 @@
   --ifm-link-color: #32d8b4;
 }
 
+.buttonFooter {
+  font-size: .875rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0.625rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonFooter img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer__item {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  margin-top: .5rem;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;

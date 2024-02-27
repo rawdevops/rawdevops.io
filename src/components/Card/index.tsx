@@ -12,7 +12,6 @@ const Wrapper = styled("div")(({ theme }) => ({
   backgroundColor: "#ffffff",
   border: "none",
   "&:hover": {
-    //Scale the card on hover
     transform: "scale(1.05)",
     transition: "all 0.3s ease",
     cursor: "pointer",
@@ -86,6 +85,7 @@ interface CardProps {
   href: string;
   available?: boolean;
   docHref?: string;
+  avatar: string;
 }
 
 const Card = ({
@@ -95,6 +95,7 @@ const Card = ({
   description,
   available,
   docHref,
+  avatar,
 }: CardProps) => {
   return (
     <Wrapper
@@ -103,7 +104,7 @@ const Card = ({
       }}
     >
       <MyImg src={image} alt={title} />
-      <MyAvatar alt={title} src={image} />
+      <MyAvatar alt={title} src={avatar} />
       <TextDiv>
         <Title>{title}</Title>
         <Desc>{available ? description : "Em breve"}</Desc>

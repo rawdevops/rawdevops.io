@@ -9,10 +9,13 @@ import FAQBody from "./FAQCard";
 import bootCampImage from "../../static/img/Bootcamp.png";
 //@ts-ignore
 import sigNozGif from "../../static/img/countdown/signoz.gif";
+//@ts-ignore
+import AvatarImg from "../../static/img/CardAvatar.png";
 import Card from "../components/Card";
 import { TweetsSection } from "./bootcamp";
 import { styled } from "@mui/material";
 import { FaqPAGE } from "./signoz/styles/styles";
+
 
 function CountdownTimer2() {
   return (
@@ -58,12 +61,14 @@ const Courses = () => {
           image={bootCampImage}
           href={"/bootcamp"}
           docHref="/docs/Bootcamp/welcome"
+          avatar={AvatarImg}
         />
         <Card
           title="SigNoz"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           image={sigNozGif}
           href={"/signoz"}
+          avatar="https://play-lh.googleusercontent.com/z9npS_BGM2-ncTZzGWdxZG8QQs-CKnX5YOq0J8f8CAzNMYADjm072wswiXVhfjsOkqtF=s180-rw"
         />
       </ResponsiveDiv>
     </div>
@@ -93,6 +98,7 @@ function HomepageHeader() {
     transition: "0.5s",
     "&:hover": {
       backgroundColor: "#797979",
+      cursor: "pointer",
     },
     "@media (max-width: 768px)": {
       fontSize: "0.9rem", // Adjust font size for smaller screens

@@ -36,7 +36,7 @@ export const Customers = () => {
         backgroundColor: "#000000",
         color: "#ffffff",
       }}>
-        <div className={styles.buttonWhatsapp} onClick={() => window.open("/consulting", "_blank")}>
+        <div className={styles.buttonWhatsapp} onClick={() => window.open("https://api.whatsapp.com/send?phone=62982654177", "_blank")}>
           <WhatsApp />
           FALE COM UM CONSULTOR
         </div>
