@@ -173,7 +173,7 @@ export const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
             maxWidth: "43.625rem",
           }}
         >
-          {list.map((item) => MyAccordion(item.title, item.description))}
+          {list && list.map((item) => MyAccordion(item.title, item.description))}
         </div>
       </header>
     );

@@ -1,84 +1,32 @@
 import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-// import LogoSlider from "@site/src/components/LogoSlider";
 import CountdownTimer from "../components/CountdownTimer";
 import { Customers } from "../components/Customers";
-import FAQBody from "./FAQCard";
-//@ts-ignore
-import bootCampImage from "../../static/img/Bootcamp.png";
-//@ts-ignore
-import sigNozGif from "../../static/img/countdown/signoz.gif";
-//@ts-ignore
-import AvatarImg from "../../static/img/CardAvatar.png";
 import Card from "../components/Card";
 import { TweetsSection } from "./bootcamp";
 import { ButtonProps, styled } from "@mui/material";
-import FaqPAGE  from "./signoz/styles/styles";
-import {Button} from "@mui/material";
+import FaqPAGE from "./signoz/styles/styles";
+import { Button } from "@mui/material";
+import { Courses } from "../components/Courses";
+import HomeImg from "../../static/img/HomePageImg.png";
 
-function CountdownTimer2() {
-  return (
-    <div>
-      <CountdownTimer targetDate="2024-04-07" />
-    </div>
-  );
-}
 
-const Courses = () => {
+function HomepageHeader() {
   const ResponsiveDiv = styled("div")({
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
-    gap: "30px",
+    gap: "20px",
+    padding: "0 20%",
     "@media (max-width: 768px)": {
       gridTemplateColumns: "1fr",
     },
   });
-  return (
-    <div
-      id="courses"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        backgroundColor: "#000000",
-        paddingTop: "50px",
-        paddingBottom: "50px",
-      }}
-    >
-      <h1
-        style={{
-          color: "#fff",
-          marginBottom: "50px",
-        }}
-      >
-        Nossos Cursos
-      </h1>
-      <ResponsiveDiv>
-        <Card
-          available
-          title="DevOps Bootcamp"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          image={bootCampImage}
-          href={"/bootcamp"}
-          docHref="/docs/Bootcamp/welcome"
-          avatar={AvatarImg}
-        />
-        <Card
-          title="SigNoz"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          image={sigNozGif}
-          href={"/signoz"}
-          avatar="https://play-lh.googleusercontent.com/z9npS_BGM2-ncTZzGWdxZG8QQs-CKnX5YOq0J8f8CAzNMYADjm072wswiXVhfjsOkqtF=s180-rw"
-        />
-      </ResponsiveDiv>
-    </div>
-  );
-};
 
-function HomepageHeader() {
+
   const TitleText = styled("h1")({
     fontSize: "3rem",
+    fontWeight: "normal",
   });
 
   const SubText = styled("h3")({
@@ -86,14 +34,20 @@ function HomepageHeader() {
     margin: "0",
   });
 
+  const MyImg = styled("img")({
+    width: "100%",
+    objectFit: "cover",
+  });
+
   const ButtonHome = styled(Button)<ButtonProps>(({ theme }) => ({
     color: "#ff5e3a",
+    marginTop: "1rem",
     backgroundColor: "#000000",
     fontWeight: "semibold",
     width: "30%",
     paddingBottom: "0.5rem",
     borderRadius: "12px",
-    height: "3.5rem",
+    height: "3rem",
     border: "1px solid #797979",
     textShadow: "0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a",
     transition: "0.5s",
@@ -102,7 +56,7 @@ function HomepageHeader() {
       cursor: "pointer",
     },
     "@media (max-width: 768px)": {
-      fontSize: "0.9rem", // Adjust font size for smaller screens
+      fontSize: "0.9rem",
       width: "100%",
     },
   }));
@@ -111,31 +65,48 @@ function HomepageHeader() {
       style={{
         padding: "32px",
         backgroundColor: "#000000",
+        display: "flex",
+        flexDirection: "column",
+        height: "auto",
+        justifyContent: "center",
+        alignItems: "center",
       }}
       className={clsx("hero hero--primary")}
     >
-      <div
-        style={{
+      <ResponsiveDiv>
+        <div style={{
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          alignItems: "center",
           width: "100%",
-          textAlign: "center",
-        }}
-      >
-        <TitleText>
-          Treinamentos e consultoria em Infraestrutura Moderna de TI
-        </TitleText>
-        <SubText>
-          Cloud, containers, observabilidade completa poderosa e serverless.
-        </SubText>
-        <ButtonHome>
-          <a href="#courses">
-            <SubText>Comece Já!!</SubText>
+          justifyContent: "center",
+        }}>
+          <TitleText>
+            Consultoria e treinamentos em{" "}
+            <strong>Infraestrutura Moderna de TI</strong>
+          </TitleText>
+          <SubText>
+            Cloud, containers, observabilidade completa poderosa e serverless.
+          </SubText>
+          <a
+            href="#courses"
+            rel="noopener noreferrer"
+            style={{
+              color: "#ff5e3a",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            <ButtonHome>
+              <SubText>comece já!</SubText>
+            </ButtonHome>
           </a>
-        </ButtonHome>
-      </div>
+        </div>
+          <MyImg
+            src={HomeImg}
+            alt="home"
+          />
+      </ResponsiveDiv>
     </header>
   );
 }

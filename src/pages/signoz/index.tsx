@@ -6,8 +6,19 @@ import {
   ResponsiveDiv,
   MyButton,
   VideoContainer,
-  FaqPAGE,
 } from "./styles/styles";
+import FaqPAGE from "./styles/styles";
+import CountdownTimer from "@site/src/components/CountdownTimer";
+
+function CountdownTimer2() {
+  return (
+    <div>
+      <CountdownTimer targetDate="2024-04-07" />
+    </div>
+  );
+}
+
+
 function HomepageHeader() {
   return (
     <header
@@ -53,6 +64,7 @@ function HomepageHeader() {
         <MyButton>Comece Já!</MyButton>
         <MyButton>Documentação</MyButton>
       </ResponsiveDiv>
+      <CountdownTimer2 />
       <VideoContainer id="XbGYQ3kYPjs" />
     </header>
   );

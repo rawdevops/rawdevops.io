@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ComponentType } from "react";
 import { Avatar, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { ButtonProps } from "@mui/material/Button";
@@ -25,11 +25,11 @@ const TextDiv = styled("div")({
   paddingRight: "2rem",
   paddingBottom: "1rem",
   minHeight: "10rem",
+  height: "100%",
 });
 
 const MyImg = styled("img")({
   width: "100%",
-  height: "100%",
   objectFit: "cover",
   borderRadius: "12px 12px 0 0",
 });
@@ -61,17 +61,17 @@ const MyAvatar = styled(Avatar)({
 const ButtonDiv = styled("div")({
   display: "flex",
   flexDirection: "row",
-  justifyContent: "space-around",
-  gap: "1rem",
-  padding: "1rem",
+  gap: "0.5rem",
+  padding: "1rem 2rem",
   width: "100%",
+  justifySelf: "flex-end",
 });
 
 const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
   color: theme.palette.getContrastText("#000000"),
   backgroundColor: "#2c2c2c",
   fontWeight: "bold",
-  minWidth: "10rem",
+  minWidth: "8rem",
   height: "2.5rem",
   "&:hover": {
     backgroundColor: "#797979",
@@ -104,7 +104,7 @@ const Card = ({
       }}
     >
       <MyImg src={image} alt={title} />
-      <MyAvatar alt={title} src={avatar} />
+      <MyAvatar src={avatar} alt="avatar" />
       <TextDiv>
         <Title>{title}</Title>
         <Desc>{available ? description : "Em breve"}</Desc>
