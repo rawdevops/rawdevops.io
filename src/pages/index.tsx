@@ -32,6 +32,9 @@ function HomepageHeader() {
   const MyImg = styled("img")({
     maxWidth: "500px",
     objectFit: "cover",
+    "@media (max-width: 768px)": {
+      maxWidth: "300px",
+    }
   });
 
   const ButtonHome = styled(Button)<ButtonProps>(({ theme }) => ({
