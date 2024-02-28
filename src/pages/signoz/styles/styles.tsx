@@ -5,8 +5,6 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-//@ts-ignore
-import accIcon from "../../../../static/img/iconAcc.png";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import Translate from "@docusaurus/Translate";
 import Heading from "@theme/Heading";
@@ -73,7 +71,7 @@ export const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
             }}
           >
             <img
-              src={accIcon}
+              src='/img/iconAcc.png'
               alt="icon"
               style={{ width: "40px", height: "40px", maxWidth: "none"}}
             />

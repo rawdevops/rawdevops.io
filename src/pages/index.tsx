@@ -1,16 +1,12 @@
 import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import CountdownTimer from "../components/CountdownTimer";
 import { Customers } from "../components/Customers";
-import Card from "../components/Card";
 import { TweetsSection } from "./bootcamp";
 import { ButtonProps, styled } from "@mui/material";
 import FaqPAGE from "./signoz/styles/styles";
 import { Button } from "@mui/material";
 import { Courses } from "../components/Courses";
-import HomeImg from "../../static/img/HomePageImg.png";
-
 
 function HomepageHeader() {
   const ResponsiveDiv = styled("div")({
@@ -103,7 +99,7 @@ function HomepageHeader() {
           </a>
         </div>
           <MyImg
-            src={HomeImg}
+            src='img/HomePageImg.png'
             alt="home"
           />
       </ResponsiveDiv>

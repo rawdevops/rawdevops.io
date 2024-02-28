@@ -3,7 +3,6 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import { Tab, Tabs, Typography, Box, Grid, styled } from '@mui/material';
 import styles from './styles.module.css';
-// import './styles.modules.css';
 
 
 function CaseStudies(): JSX.Element {

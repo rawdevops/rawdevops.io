@@ -46,7 +46,10 @@
   padding: 0 1rem;
   align-items: center;
   justify-content: center;
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .buttonFooter {
     max-width: 100%;
     max-height: 100%;
   }

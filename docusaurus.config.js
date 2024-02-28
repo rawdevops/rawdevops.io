@@ -128,8 +128,7 @@ const config = {
             position: "left",
           },
           {
-            type: "doc",
-            docId: "Bootcamp/welcome",
+            to: "/bootcamp",
             position: "left",
             label: "Bootcamp",
           },

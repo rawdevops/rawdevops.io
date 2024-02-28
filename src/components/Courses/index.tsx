@@ -2,12 +2,6 @@ import styled from "@emotion/styled";
 import React from "react";
 import Card from "../Card";
 
-import BootcampBg from "../../../static/img/BootcampBg.png";
-import SignozBg from "../../../static/img/SignozBg.png";
-import BootcampAvatar from "../../../static/img/BootcampAvatar.png";
-import SignozAvatar from "../../../static/img/SignozAvatar.png";
-
-
 export const Courses = () => {
     const ResponsiveDiv = styled("div")({
       display: "grid",
@@ -42,17 +36,17 @@ export const Courses = () => {
             available
             title="RAW DevOps Bootcamp completo e 100% Open Source"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            image={BootcampBg}
+            image="/img/BootcampBg.png"
             href={"/bootcamp"}
             docHref="/docs/Bootcamp/welcome"
-            avatar={BootcampAvatar}
+            avatar='/img/BootcampAvatar.png'
           />
           <Card
             title="SigNoz - plataforma all-in-one de observabilidade open source"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            image={SignozBg}
+            image='/img/SignozBg.png'
             href={"/signoz"}
-            avatar={SignozAvatar}
+            avatar='/img/SignozAvatar.png'
           />
         </ResponsiveDiv>
       </div>
