@@ -2,11 +2,7 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
-import {
-  ResponsiveDiv,
-  MyButton,
-  VideoContainer,
-} from "./styles/styles";
+import { ResponsiveDiv, MyButton, VideoContainer } from "./styles/styles";
 import FaqPAGE from "./styles/styles";
 import CountdownTimer from "@site/src/components/CountdownTimer";
 
@@ -18,6 +14,9 @@ function CountdownTimer2() {
   );
 }
 
+function handleButtonClick(href: string) {
+  window.open(href);
+}
 
 function HomepageHeader() {
   return (
@@ -63,9 +62,16 @@ function HomepageHeader() {
       <ResponsiveDiv>
         <MyButton>Comece Já!</MyButton>
         <MyButton>Documentação</MyButton>
+        <MyButton
+          onClick={() =>
+            handleButtonClick("https://forms.gle/n8T6cmacLg1GW3UF9")
+          }
+        >
+          FORM DE LANÇAMENTO
+        </MyButton>
       </ResponsiveDiv>
-      <CountdownTimer2 />
       <VideoContainer id="XbGYQ3kYPjs" />
+      <CountdownTimer2 />
     </header>
   );
 }

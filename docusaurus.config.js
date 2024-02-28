@@ -204,6 +204,10 @@ const config = {
                 </a>
               `,
               },
+              {
+                label: "Sobre Nós",
+                to: "/about-us",
+              }
             ],
           },
         ],

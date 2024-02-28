@@ -11,14 +11,13 @@ import { Courses } from "../components/Courses";
 function HomepageHeader() {
   const ResponsiveDiv = styled("div")({
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "20px",
-    padding: "0 20%",
-    "@media (max-width: 768px)": {
-      gridTemplateColumns: "1fr",
+    gridTemplateColumns: "700px 1fr",
+    "@media (max-width: 1024px)": {
+      display: "flex",
+      flexDirection: "column-reverse",
+      alignItems: "center",
     },
   });
-
 
   const TitleText = styled("h1")({
     fontSize: "3rem",
@@ -31,7 +30,7 @@ function HomepageHeader() {
   });
 
   const MyImg = styled("img")({
-    width: "100%",
+    maxWidth: "500px",
     objectFit: "cover",
   });
 
@@ -40,7 +39,7 @@ function HomepageHeader() {
     marginTop: "1rem",
     backgroundColor: "#000000",
     fontWeight: "semibold",
-    width: "30%",
+    width: "60%",
     paddingBottom: "0.5rem",
     borderRadius: "12px",
     height: "3rem",
@@ -53,13 +52,14 @@ function HomepageHeader() {
     },
     "@media (max-width: 768px)": {
       fontSize: "0.9rem",
-      width: "100%",
+      width: "80%",
+      alignSelf: "center",
     },
   }));
   return (
     <header
       style={{
-        padding: "32px",
+        padding: "5rem, 20%",
         backgroundColor: "#000000",
         display: "flex",
         flexDirection: "column",
@@ -70,13 +70,16 @@ function HomepageHeader() {
       className={clsx("hero hero--primary")}
     >
       <ResponsiveDiv>
-        <div style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "20px",
-          width: "100%",
-          justifyContent: "center",
-        }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+            width: "100%",
+            justifyContent: "center",
+            padding: "0 2rem",
+          }}
+        >
           <TitleText>
             Consultoria e treinamentos em{" "}
             <strong>Infraestrutura Moderna de TI</strong>
@@ -98,10 +101,7 @@ function HomepageHeader() {
             </ButtonHome>
           </a>
         </div>
-          <MyImg
-            src='img/HomePageImg.png'
-            alt="home"
-          />
+        <MyImg src="img/HomePageImg.png" alt="home" />
       </ResponsiveDiv>
     </header>
   );
