@@ -12,13 +12,6 @@ export const Courses = () => {
       gridTemplateColumns: "1fr",
     },
   });
-
-  const SubText = styled("p")({
-    fontSize: "1.2rem",
-    fontWeight: "normal",
-    margin: "0",
-    color: "#fff",
-  });
   return (
     <div
       id="courses"
@@ -38,9 +31,6 @@ export const Courses = () => {
         }}
       >
         • Nossos Cursos
-        <SubText>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam, id dolores iusto quas provident reiciendis tempore vel quisquam nesciunt earum velit architecto aperiam nulla veritatis vitae itaque sed illum?
-        </SubText>
       </h1>
       <ResponsiveDiv>
         <Card

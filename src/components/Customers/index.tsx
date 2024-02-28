@@ -31,16 +31,6 @@ export const Customers = () => {
             consultoria DevOps
           </a>
         </div>
-        <p style={{
-          color: "#ffffff",
-          textAlign: "center",
-          padding: "0 2rem",
-        }}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-          possimus quae inventore reiciendis dignissimos ab neque, harum eum
-          vitae consequuntur error repellat cupiditate molestiae numquam
-          accusamus? Error distinctio cumque quaerat.
-        </p>
         <ul className={`${styles.logoContainer} row`}>
           {COMPANIES.map((company, idx) => (
             <li key={`${idx}-${company.image}`} className="col col--3">

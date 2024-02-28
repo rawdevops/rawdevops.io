@@ -6,57 +6,71 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Quotes from "@site/src/components/Quotes";
 import Image from "@theme/IdealImage";
-import Translate, { translate } from "@docusaurus/Translate";
+import Translate from "@docusaurus/Translate";
 import LogoSlider from "@site/src/components/LogoSlider";
 import FAQ from "@site/src/components/FAQ";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import Heading from "@theme/Heading";
-import { Customers } from "@site/src/components/Customers";
-import CountdownTimer from "@site/src/components/CountdownTimer";
 
 import styles from "./index.module.css";
+import { styled } from "@mui/material";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const ResponsiveImg = styled("img")({
+    maxWidth: "650px",
+    objectFit: "cover",
+    "@media (max-width: 768px)": {
+      display: "none",
+    },
+  });
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
+      <div style={{
+        display: "flex",
+        flexDirection: "row-reverse",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+      }}>
         <a href="">
           {" "}
-          <img
+          <ResponsiveImg
             src="img/RAW-DevOps-Logo.png"
             alt="docusaurus mascot"
-            height="400"
-            width="650"
+            // height="400"
+            // width="650"
           />{" "}
         </a>{" "}
         <br></br>
         <br></br>
-        <h1 className="hero__title">
-          <img
-            src="img/Bootcamp.png"
-            alt="docusaurus mascot"
-            height="125"
-            width="175"
-          />
-        </h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN"
-          >
-            COMPRE NOSSO CURSO COM 20% OFF
-          </Link>
-        </div>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Bootcamp/modulo1"
-          >
-            Documentação Bootcamp
-          </Link>
+        <div>
+          <h1 className="hero__title">
+            <img
+              src="img/Bootcamp.png"
+              alt="docusaurus mascot"
+              height="125"
+              width="175"
+            />
+          </h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN"
+            >
+              COMPRE NOSSO CURSO COM 20% OFF
+            </Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/Bootcamp/modulo1"
+            >
+              Documentação Bootcamp
+            </Link>
+          </div>
         </div>
       </div>
     </header>
@@ -277,14 +291,6 @@ export function TweetsSection() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-function CountdownTimer2() {
-  return (
-    <div>
-      <CountdownTimer targetDate="2024-04-07" />
     </div>
   );
 }

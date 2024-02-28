@@ -60,8 +60,8 @@ function HomepageHeader() {
         </h3>
       </div>
       <ResponsiveDiv>
-        <MyButton>Comece Já!</MyButton>
-        <MyButton>Documentação</MyButton>
+        {/* <MyButton>Comece Já!</MyButton>
+        <MyButton>Documentação</MyButton> */}
         <MyButton
           onClick={() =>
             handleButtonClick("https://forms.gle/n8T6cmacLg1GW3UF9")
