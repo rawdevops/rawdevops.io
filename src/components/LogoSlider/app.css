@@ -44,12 +44,13 @@
   }
   
   .mainContainer .container img{
-    height: 90px;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+    object-fit: contain;
   }
   
   /* div h3{
