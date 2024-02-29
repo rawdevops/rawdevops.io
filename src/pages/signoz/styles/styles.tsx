@@ -138,16 +138,45 @@ type FaqProps = {
 };
 
 const FaqPAGE = ({ list }: { list: FaqProps[] }) => {
+  const WrapperSpan = styled("div")({
+    display: "flex",
+    alignItems: "center",
+    width: "fit-content",
+    padding: "0.5rem 1rem",
+    maxHeight: "2rem",
+    borderRadius: ".25rem",
+    border: "1px solid #FF5E3A",
+  });
+
+  const SpanFaq = styled("span")({
+    color: "transparent",
+    fontSize: ".75rem",
+    fontWeight: "500",
+    lineHeight: "1rem",
+    backgroundClip: "text",
+    backgroundImage: "linear-gradient(90deg, #FF5E3A 0%, #FF5E3A 100%)",
+    "@media (min-width: 1024px)": {
+      fontSize: ".875rem",
+      lineHeight: "1.25rem",
+    }
+  });
+
+  const Header = styled("header")({
+    padding: "5rem 0",
+    display: "flex",
+    flexDirection: "row",
+    gap: "2.5rem",
+    height: "auto",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    "@media (max-width: 768px)": {
+      flexDirection: "column",
+      gap: "20px",
+      alignItems: "center",
+    },
+  });
   return (
-    <header
-      style={{
-        padding: "5rem 0",
-        display: "flex",
-        flexDirection: "column",
-        gap: "2.5rem",
-        height: "auto",
-        justifyContent: "center",
-      }}
+    <Header
       className={clsx("hero hero--primary", "hero-banner")}
     >
       <div
@@ -157,9 +186,13 @@ const FaqPAGE = ({ list }: { list: FaqProps[] }) => {
           gap: "10px",
           height: "100%",
           alignItems: "flex-start",
+          justifySelf: "flex-start",
         }}
       >
-        <span>FAQ</span>
+        {/* <span>FAQ</span> */}
+        <WrapperSpan>
+          <SpanFaq>FAQ_</SpanFaq>
+        </WrapperSpan>
         <h1>Perguntas Frequentes</h1>
       </div>
       <div
@@ -177,7 +210,7 @@ const FaqPAGE = ({ list }: { list: FaqProps[] }) => {
             MyAccordion key={index} title={item.title} description={item.description} />
           )} */}
       </div>
-    </header>
+    </Header>
   );
 };
 

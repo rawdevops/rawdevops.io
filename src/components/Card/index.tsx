@@ -16,6 +16,9 @@ const Wrapper = styled("div")(({ theme }) => ({
     transition: "all 0.3s ease",
     cursor: "pointer",
   },
+  "@media (max-width: 768px)": {
+    maxWidth: "100%",
+  },
 }));
 
 const TextDiv = styled("div")({
