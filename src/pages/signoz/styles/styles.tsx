@@ -24,20 +24,22 @@ export const ResponsiveDiv = styled("div")(({ theme }) => ({
 }));
 
 export const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
-  color: "#ff5e3a",
-  backgroundColor: "#000000",
+  color: "#ffffff",
+  backgroundColor: "rgb(255, 94, 58)",
   fontWeight: "bold",
-  width: "100%",
+  width: "auto",
+  padding: "0.5rem 2rem",
   height: "3rem",
-  border: "1px solid #797979",
-  textShadow: "0 0 20px #ff5e3a, 0 0 30px #ff5e3a, 0 0 40px #ff5e3a",
+  border: "none",
+  boxShadow: "0 0 5px #ff5e3a, 0 0 10px #ff5e3a, 0 0 15px #ff5e3a",
   "&:hover": {
-    backgroundColor: "#797979",
+    backgroundColor: "rgb(253, 111, 79)",
     theme,
   },
   "@media (max-width: 768px)": {
-    height: "3rem", // Adjust height for smaller screens
-    fontSize: "0.9rem", // Adjust font size for smaller screens
+    height: "3rem",
+    fontSize: "0.9rem", 
+    padding: "0.5rem 1rem", 
   },
 }));
 

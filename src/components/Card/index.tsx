@@ -69,14 +69,21 @@ const ButtonDiv = styled("div")({
 
 const MyButton = styled(Button)<ButtonProps>(({ theme }) => ({
   color: theme.palette.getContrastText("#000000"),
-  backgroundColor: "#2c2c2c",
+  backgroundColor: "#000000",
   fontWeight: "bold",
   minWidth: "8rem",
   height: "2.5rem",
   "&:hover": {
-    backgroundColor: "#797979",
+    backgroundColor: "#2e2e2e",
   },
 }));
+
+const NonAvailableButton = styled(MyButton)({
+  backgroundColor: "#797979",
+  "&:hover": {
+    backgroundColor: "#797979",
+  },
+});
 
 interface CardProps {
   image: string;
@@ -113,9 +120,10 @@ const Card = ({
         {available ? (
           <MyButton href={href}>20% OFF</MyButton>
         ) : (
-          <MyButton disabled>Em breve...</MyButton>
+          // 
+          <NonAvailableButton>Em breve...</NonAvailableButton>
         )}
-        <MyButton href={docHref}>Documentação</MyButton>
+          <MyButton href={docHref}>Documentação</MyButton>
       </ButtonDiv>
     </Wrapper>
   );

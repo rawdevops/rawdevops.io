@@ -12,7 +12,6 @@ import FAQ from "@site/src/components/FAQ";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import Heading from "@theme/Heading";
-
 import styles from "./index.module.css";
 import { styled } from "@mui/material";
 
@@ -27,32 +26,24 @@ function HomepageHeader() {
   });
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div style={{
-        display: "flex",
-        flexDirection: "row-reverse",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100%",
-      }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row-reverse",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
+        }}
+      >
         <a href="">
           {" "}
-          <ResponsiveImg
-            src="img/RAW-DevOps-Logo.png"
-            alt="docusaurus mascot"
-            // height="400"
-            // width="650"
-          />{" "}
+          <ResponsiveImg src="/img/RAW-DevOps-Logo.png" alt="logoImg" />{" "}
         </a>{" "}
         <br></br>
         <br></br>
         <div>
           <h1 className="hero__title">
-            <img
-              src="img/Bootcamp.png"
-              alt="docusaurus mascot"
-              height="125"
-              width="175"
-            />
+            <img src="/img/Bootcamp.png" alt="logo" height="125" width="175" />
           </h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>

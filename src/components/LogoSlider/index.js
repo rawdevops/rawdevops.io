@@ -21,49 +21,49 @@ class App extends Component{
         <h2 style={{color: 'white', fontSize: '20px', fontFamily:'Ubuntu'}}>100% Open Source</h2>
         <Slider {...settings}>
           <div className="container">
-            <img src="img/logoslider/ubuntu-logo.png" />
+            <img src="/img/logoslider/ubuntu-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/docker-logo.png" />
+            <img src="/img/logoslider/docker-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/kubernetes-logo.png" />
+            <img src="/img/logoslider/kubernetes-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/github-logo.png" />
+            <img src="/img/logoslider/github-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/githubactions-logo.png" />
+            <img src="/img/logoslider/githubactions-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/helm-logo.png" />
+            <img src="/img/logoslider/helm-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/chartmusseum-logo.png" />
+            <img src="/img/logoslider/chartmusseum-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/nginx-logo.png" />
+            <img src="/img/logoslider/nginx-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/prometheus-logo.png" />
+            <img src="/img/logoslider/prometheus-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/grafana-logo.png" />
+            <img src="/img/logoslider/grafana-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/grafana-loki-logo.png" />
+            <img src="/img/logoslider/grafana-loki-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/signoz-logo.png" />
+            <img src="/img/logoslider/signoz-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/opentelemetry.png" />
+            <img src="/img/logoslider/opentelemetry.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/k9s-logo.png" />
+            <img src="/img/logoslider/k9s-logo.png" />
           </div>
           <div className="container">
-            <img src="img/logoslider/k6-logo.png" />
+            <img src="/img/logoslider/k6-logo.png" />
           </div>
         </Slider>
       </div>

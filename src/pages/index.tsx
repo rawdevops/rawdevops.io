@@ -14,7 +14,7 @@ function HomepageHeader() {
     gridTemplateColumns: "700px 1fr",
     "@media (max-width: 1024px)": {
       display: "flex",
-      flexDirection: "column-reverse",
+      flexDirection: "column",
       alignItems: "center",
     },
   });
@@ -55,8 +55,7 @@ function HomepageHeader() {
     },
     "@media (max-width: 768px)": {
       fontSize: "0.9rem",
-      width: "80%",
-      alignSelf: "center",
+      width: "100%",
     },
   }));
   return (
@@ -104,7 +103,7 @@ function HomepageHeader() {
             </ButtonHome>
           </a>
         </div>
-        <MyImg src="img/HomePageImg.png" alt="home" />
+        <MyImg src="/img/HomePageImg.png" alt="home" />
       </ResponsiveDiv>
     </header>
   );
