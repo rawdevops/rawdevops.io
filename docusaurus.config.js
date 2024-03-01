@@ -1,40 +1,40 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RAW DevOps',
-  tagline: 'Bootcamp com imersão completa no mundo DevOps',
-  favicon: 'img/logofavicon.png',
+  title: "RAW DevOps",
+  tagline: "Bootcamp com imersão completa no mundo DevOps",
+  favicon: "img/logofavicon.png",
 
   // Set the production url of your site here
-  url: 'https://rawdevops.io',
+  url: "https://rawdevops.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'rawdevops', // Usually your GitHub org/user name.
-  projectName: 'rawdevops', // Usually your repo name.
+  organizationName: "rawdevops", // Usually your GitHub org/user name.
+  projectName: "rawdevops", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  }, 
+    defaultLocale: "pt-BR",
+    locales: ["pt-BR"],
+  },
 
   plugins: [
     [
-      'ideal-image',
+      "ideal-image",
       /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
       ({
         quality: 70,
@@ -49,11 +49,11 @@ const config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -67,7 +67,7 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -77,49 +77,49 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/logo.png',
+      image: "img/logo.png",
       navbar: {
-        title: 'RAW DevOps',
+        title: "RAW DevOps",
         logo: {
-          alt: 'rawdevopslogo',
-          src: 'img/logoFlower.png',
+          alt: "rawdevopslogo",
+          src: "img/logoFlower.png",
         },
         items: [
           {
-            href: 'https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN',
-            'aria-label': 'Udemy',
-            position: 'right',
-            className: 'navbar-udemy-link',
+            href: "https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFEV",
+            "aria-label": "Udemy",
+            position: "right",
+            className: "navbar-udemy-link",
           },
           {
-            href: 'https://github.com/rawdevops',
-            'aria-label': 'GitHub repository',
-            position: 'right',
-            className: 'navbar-github-link',
+            href: "https://github.com/rawdevops",
+            "aria-label": "GitHub repository",
+            position: "right",
+            className: "navbar-github-link",
           },
           {
-            href: 'https://www.instagram.com/rawdevopsbrasil/',
-            'aria-label': 'Instagram',
-            position: 'right',
-            className: 'navbar-instagram-link',
+            href: "https://www.instagram.com/rawdevopsbrasil/",
+            "aria-label": "Instagram",
+            position: "right",
+            className: "navbar-instagram-link",
           },
           {
-            href: 'https://www.linkedin.com/company/rawdevopsbrasil',
-            'aria-label': 'LinkedIn',
-            position: 'right',
-            className: 'navbar-linkedin-link',
+            href: "https://www.linkedin.com/company/rawdevopsbrasil",
+            "aria-label": "LinkedIn",
+            position: "right",
+            className: "navbar-linkedin-link",
           },
           {
-            href: 'https://www.youtube.com/@rawdevops',
-            'aria-label': 'YouTube',
-            position: 'right',
-            className: 'navbar-youtube-link',
+            href: "https://www.youtube.com/@rawdevops",
+            "aria-label": "YouTube",
+            position: "right",
+            className: "navbar-youtube-link",
           },
           {
-            href: 'https://api.whatsapp.com/send?phone=62982654177',
-            'aria-label': 'Whatsapp',
-            position: 'right',
-            className: 'navbar-whatsapp-link',
+            href: "https://api.whatsapp.com/send?phone=62982654177",
+            "aria-label": "Whatsapp",
+            position: "right",
+            className: "navbar-whatsapp-link",
           },
           {
             to: "consulting/",
@@ -128,63 +128,88 @@ const config = {
             position: "left",
           },
           {
-            type: 'doc',
-            docId: 'Bootcamp/welcome',
-            position: 'right',
-            label: 'Bootcamp',
+            to: "/bootcamp",
+            position: "left",
+            label: "Bootcamp",
+          },
+          {
+            to: "/signoz",
+            position: "left",
+            label: "SigNoz",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
-        style: 'dark',
-        // logo: {
-        //   alt: 'Meta Open Source Logo',
-        //   src: 'img/logo.png',
-        //   href: 'https://opensource.fb.com',
-        //   width: 160,
-        //   height: 51,
-        // },
+        style: "dark",
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: "Cursos",
+            items: [
+              {
+                label: "Bootcamp DevOps",
+                to: "/bootcamp",
+              },
+              {
+                label: "SigNoz",
+                to: "/signoz",
+              },
+            ],
+          },
+          {
+            title: "Nossas Redes",
+            items: [
+              {
+                label: "Udemy",
+                href: "https://www.udemy.com/user/rawdevopsio/",
+              },
+              {
+                label: "YouTube",
+                href: "https://www.youtube.com/@rawdevopsbrasil",
+              },
+              {
+                label: "Linkedin",
+                href: "https://www.linkedin.com/company/rawdevopsbrasil/",
+              },
+              {
+                label: "Instagram",
+                href: "https://www.instagram.com/rawdevopsbrasil",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/rawdevops",
+              },
+              {
+                label: "TikTok",
+                href: "https://www.tiktok.com/@rawdevopsbrasil",
+              },
+            ],
+          },
+          {
+            title: "Fale Conosco",
+            items: [
+              {
+                html: `
+                <a href="https://api.whatsapp.com/send?phone=62982654177" class="buttonFooter">
+                  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+                  Chamar no WhatsApp
+                </a>
+              `,
+              },
+              {
+                html: `
+                <a href="mailto:emailraw@gmail.com" class="buttonFooter">
+                  <img src="https://img.icons8.com/color/48/000000/email.png" alt="Email" />
+                  Enviar um Email
+                </a>
+              `,
+              },
+              {
+                label: "Sobre Nós",
+                to: "/about-us",
+              }
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} RAW DevOps, Ltda. Made with docusaurus.io ❤️`,
       },
@@ -193,16 +218,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: "light",
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
       announcementBar: {
-        id: 'desconto',
+        id: "desconto",
         content:
-          '20% de desconto usando o Cupom RAWDEVOPSJAN ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">20% OFF</a>',
-        backgroundColor: '#480058',
-        textColor: '#FFFFFF',
+          '20% de desconto no bootcamp usando o Cupom RAWDEVOPSFEV ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFEV">20% OFF</a>',
+        backgroundColor: "#480058",
+        textColor: "#FFFFFF",
         isCloseable: false,
       },
     }),

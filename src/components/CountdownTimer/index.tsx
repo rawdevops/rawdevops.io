@@ -35,7 +35,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
           <h1>SigNoz: plataforma all-in-one de observabilidade open source</h1>
           <p>07/04/2024 às 19h</p>
         </div>
-        <img src="img/countdown/signoz.gif" alt="Logo 1" className="logo" />
+        <img src="/img/countdown/signoz.gif" alt="Logo 1" className="logo" />
 
         <div className="timer">
           <div className="timer-item">
