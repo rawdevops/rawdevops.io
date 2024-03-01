@@ -30,7 +30,7 @@ function HomepageHeader() {
   });
 
   const MyImg = styled("img")({
-    maxWidth: "600px",
+    maxWidth: "700px",
     objectFit: "cover",
     "@media (max-width: 768px)": {
       maxWidth: "350px",
@@ -99,7 +99,7 @@ function HomepageHeader() {
             }}
           >
             <ButtonHome>
-              <SubText>comece já!</SubText>
+              <SubText>EXPLORAR CONTEÚDO</SubText>
             </ButtonHome>
           </a>
         </div>
@@ -111,29 +111,33 @@ function HomepageHeader() {
 
 const faq = [
   {
-    title: "Este curso serve também para desenvolvedores?",
+    title: "Qual o nosso diferencial?",
     description:
-      "Sim, o curso pode ser feito por devs interessados no assunto, que desejam por exemplo não ficar perdido em reuniões sobre assunto e ter o entendimento do que um DevOps faz. O curso pode ser feito também para devs que desejam migrar para DevOps. Ou até mesmo incrementar o currículo aprendendo DevOps",
+      "Somos especialistas e entusiastas em Infraestrutura Moderna Open Source. \
+      Através de profissionais apaixonados e com uma identidade visual alternativa e mais forte, tornamos a nossa jornada de aprendizado em tecnologia mais leve. \
+      Entregamos Projetos 100% Open Source. Acreditamos que essa abordagem não apenas proporciona alta qualidade, \
+      mas também cria uma comunidade colaborativa em torno das tecnologias utilizadas, \
+      beneficiando a todos os envolvidos.",
   },
   {
     title:
-      "Haverá um certificado de conclusão para adicionar o mesmo no Linkedin?",
+      "Qual a plataforma utilizada nos cursos?",
     description:
-      "Sim, após a conclusão do curso na plataforma da Udemy você poderá gerar um certificado de conclusão",
+      "Utilizamos a Udemy, além de ser uma plataforma amada pelos Desenvolvedores. O pagamento do curso é gerenciado pela Udemy com várias formas de pagamento e seguimos suas regras e políticas de reembolso.",
   },
   {
-    title: "Pode fazer este curso sem nenhum conhecimento em DevOps?",
+    title: "Tem certificado de conclusão nos cursos?",
     description:
-      "Sim, inclusive recomendo este curso pois com ele estará mais proximo a realidade cobrada pelo mercado.",
+      "Sim, após a conclusão do curso é possível gerar um certificado na plataforma da Udemy",
   },
   {
-    title: "Quais as opções de pagamento do curso?",
+    title: "Tenho interesse na consultoria, para implantar infraestrutura moderna na minha empresa, como proceder?",
     description:
-      "O pagamento do curso é gerenciado pela Udemy. Assim a plataforma aceita, pix, cartão de credito, boleto entre outros.",
+      "Contate-nos através do Whatsapp, também possuímos uma página exclusiva da consultoria no link rawdevops.io/consulting",
   },
   {
-    title: "Há possibilidade de reeembolso caso eu não goste do conteúdo?",
-    description: "Sim, seguindo as regras e políticas da Udemy.",
+    title: "Ainda tenho dúvidas...",
+    description: "Enviar um email para rawdevops@gmail, ou falar com a gente pelo WhatsApp nos botões presente nesta página",
   },
 ];
 

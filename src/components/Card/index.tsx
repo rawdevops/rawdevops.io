@@ -117,11 +117,14 @@ const Card = ({
       <MyAvatar src={avatar} alt="avatar" />
       <TextDiv>
         <Title>{title}</Title>
-        <Desc>{available ? description : "Em breve"}</Desc>
+        <Desc>{available ? description : "Todas as suas necessidades de observabilidade em uma única ferramenta. APM, logs, métricas, exceções, alertas e dashboards.  \
+          Signoz é a primeira plataforma all-in-one de observabilidade open source. \
+          A alternativa ao NewRelic e Datadog, que a comunidade sempre desejou. \
+          "}</Desc>
       </TextDiv>
       <ButtonDiv>
         {available ? (
-          <MyButton href={href}>20% OFF</MyButton>
+          <MyButton href={"https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFEV"}>20% OFF</MyButton>
         ) : (
           // 
           <NonAvailableButton>Em breve...</NonAvailableButton>

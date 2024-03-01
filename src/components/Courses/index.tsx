@@ -34,8 +34,11 @@ export const Courses = () => {
       </h1>
       <ResponsiveDiv>
         <Card
-          title="SigNoz - plataforma all-in-one de observabilidade open source"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="SigNoz - Plataforma All-in-one de Observabilidade Open Source"
+          description="Todas as suas necessidades de observabilidade em uma única ferramenta. APM, logs, métricas, exceções, alertas e dashboards.  \
+          Signoz é a primeira plataforma all-in-one de observabilidade open source. \
+          A alternativa ao NewRelic e Datadog, que a comunidade sempre desejou. \
+          "
           image="/img/SignozBg.png"
           href={"/signoz"}
           avatar="/img/SignozAvatar.png"
@@ -43,7 +46,7 @@ export const Courses = () => {
         <Card
           available
           title="RAW DevOps Bootcamp completo e 100% Open Source"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description=" A nossa jornada começa no primeiro dia de trabalho como o primeiro DevOps para uma nova rede social de nome Gataria. Teremos que construir TUDO do zero. Um grande desafio! Somos um bootcamp em DevOps completo e vamos implantar um ciclo DevOps começo ao fim do absoluto zero"
           image="/img/BootcampBg.png"
           href={"/bootcamp"}
           docHref="/docs/Bootcamp/welcome"

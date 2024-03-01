@@ -49,7 +49,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
-              to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN"
+              to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFEV"
             >
               COMPRE NOSSO CURSO COM 20% OFF
             </Link>
@@ -102,14 +102,14 @@ function MigrationAnnouncement() {
           <Translate
             values={{
               docusaurusV1Link: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFEV">
                   <Translate>
                     ciclo DevOps começo ao fim do absoluto zero!
                   </Translate>
                 </Link>
               ),
               migrationGuideLink: (
-                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSJAN">
+                <Link to="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSFEV">
                   <Translate>uma implantação real</Translate>
                 </Link>
               ),
@@ -256,6 +256,18 @@ export function TweetsSection() {
                   Curso bastante intenso, com um excelente conteúdo. Parabéns
                   pela didática. Cumpre o que promete. Aguardando os próximos
                   cursos.
+                </>
+              }
+            />
+                        <Tweet
+              handle="⭐⭐⭐⭐⭐"
+              name="Pablo Oliveira"
+              avatar="/img/tweets/udemy-logo.png"
+              content={
+                <>
+                  Superou todas as minhas expectativas, que já eram altas. 
+                  Muito grato Paulo Henrique de Morais Santiago, pela iniciativa e entrega excelente. 
+                  Para quem já estudou de tudo e quer "juntar os pontinhos" esse é um excelente curso para começar a colocar a mão na massa com ferramentas modernas e super atualizadas. Merece um artigo no Linkedin com certeza rsrsr Bravo Bravissimo...
                 </>
               }
             />

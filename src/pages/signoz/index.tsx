@@ -44,19 +44,18 @@ function HomepageHeader() {
         <h1
           style={{
             fontSize: "3rem",
+            fontWeight: "normal",
           }}
         >
-          Rastreamentos, métricas e logs do OpenTelemetry-Native em um único
-          painel
+          Domine Observabilidade com o <p></p> <strong>primeiro curso de SigNoz do mundo</strong>
         </h1>
         <h3
           style={{
             fontSize: "1.5rem",
+            fontWeight: "normal",
           }}
         >
-          Uma única ferramenta para todas as suas necessidades de
-          observabilidade: APM, logs, métricas, exceções, alertas e painéis
-          alimentados por um poderoso construtor de consultas.
+          SigNoz é a alternativa open source ao NewRelic e Datadog que sempre sonhamos
         </h3>
       </div>
       <ResponsiveDiv>
@@ -78,9 +77,9 @@ function HomepageHeader() {
 
 const faq = [
   {
-    title: "Este curso serve também para desenvolvedores?",
+    title: "Qual plataforma o curso será disponibilizado?",
     description:
-      "Sim, o curso pode ser feito por devs interessados no assunto, que desejam por exemplo não ficar perdido em reuniões sobre assunto e ter o entendimento do que um DevOps faz. O curso pode ser feito também para devs que desejam migrar para DevOps. Ou até mesmo incrementar o currículo aprendendo DevOps",
+      "Udemy",
   },
   {
     title:
@@ -89,14 +88,14 @@ const faq = [
       "Sim, após a conclusão do curso na plataforma da Udemy você poderá gerar um certificado de conclusão",
   },
   {
-    title: "Pode fazer este curso sem nenhum conhecimento em DevOps?",
+    title: "Haverá desconto no lançamento?",
     description:
-      "Sim, inclusive recomendo este curso pois com ele estará mais proximo a realidade cobrada pelo mercado.",
+      "Sim, igualmente ao nosso Bootcamp vamos disponibilizar um cupom de 20%",
   },
   {
     title: "Quais as opções de pagamento do curso?",
     description:
-      "O pagamento do curso é gerenciado pela Udemy. Assim a plataforma aceita, pix, cartão de credito, boleto entre outros.",
+      "O pagamento do curso é gerenciado pela Udemy. Assim a plataforma aceita, pix, cartão de credito, boleto entre outros. Além da possibilidade de parcelamento.",
   },
   {
     title: "Há possibilidade de reeembolso caso eu não goste do conteúdo?",

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: 'Promoção DevOpsDays Florianópolis 2023'
 title: 'Promoção: a vida é dura mas a praia é mole'
 ---
