@@ -9,7 +9,7 @@ import CountdownTimer from "@site/src/components/CountdownTimer";
 function CountdownTimer2() {
   return (
     <div>
-      <CountdownTimer targetDate="2024-04-07" />
+      <CountdownTimer targetDate="2024-05-01" />
     </div>
   );
 }
