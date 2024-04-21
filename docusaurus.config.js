@@ -122,9 +122,9 @@ const config = {
             className: "navbar-whatsapp-link",
           },
           {
-            to: "consulting/",
-            activeBasePath: "consulting/",
-            label: "Consultoria",
+            to: "comunidade/",
+            activeBasePath: "comunidade/",
+            label: "Comunidade",
             position: "left",
           },
           {

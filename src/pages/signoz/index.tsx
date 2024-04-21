@@ -47,7 +47,8 @@ function HomepageHeader() {
             fontWeight: "normal",
           }}
         >
-          Domine Observabilidade com o <p></p> <strong>primeiro curso de SigNoz do mundo</strong>
+          Domine Observabilidade com o <p></p>{" "}
+          <strong>primeiro curso de SigNoz do mundo</strong>
         </h1>
         <h3
           style={{
@@ -55,12 +56,11 @@ function HomepageHeader() {
             fontWeight: "normal",
           }}
         >
-          SigNoz é a alternativa open source ao NewRelic e Datadog que sempre sonhamos
+          SigNoz é a alternativa open source ao NewRelic e Datadog que sempre
+          sonhamos
         </h3>
       </div>
       <ResponsiveDiv>
-        {/* <MyButton>Comece Já!</MyButton>
-        <MyButton>Documentação</MyButton> */}
         <MyButton
           onClick={() =>
             handleButtonClick("https://forms.gle/n8T6cmacLg1GW3UF9")
@@ -78,8 +78,7 @@ function HomepageHeader() {
 const faq = [
   {
     title: "Qual plataforma o curso será disponibilizado?",
-    description:
-      "Udemy",
+    description: "Udemy",
   },
   {
     title:
