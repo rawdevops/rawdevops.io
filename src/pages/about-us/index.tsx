@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
         >
           <p>
             A <strong>RAW DevOps</strong> é uma empresa especializada em
-            consultoria e treinamentos em Infraestrutura Moderna de TI, com uma
+            treinamentos em Infraestrutura Moderna de TI, com uma
             abordagem diferenciada que se baseia em três ideais centrais:
           </p>
           <ul>
@@ -78,10 +78,7 @@ export default function Home(): JSX.Element {
               maior eficiência. Nosso compromisso com esses ideais nos permite
               oferecer soluções inovadoras e de alta qualidade aos nossos
               clientes, auxiliando-os a alcançar seus objetivos de forma
-              eficiente e sustentável no ambiente de TI moderno. Seja em
-              projetos de consultoria ou treinamentos, estamos dedicados a
-              impulsionar o sucesso de nossos clientes por meio de nossa
-              expertise em Infraestrutura Moderna de TI.
+              eficiente e sustentável no ambiente de TI moderno.
             </li>
           </ul>
         </div>

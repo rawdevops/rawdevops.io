@@ -130,12 +130,6 @@ const faq = [
       "Sim, após a conclusão do curso é possível gerar um certificado na plataforma da Udemy",
   },
   {
-    title:
-      "Tenho interesse na consultoria, para implantar infraestrutura moderna na minha empresa, como proceder?",
-    description:
-      "Contate-nos através do Whatsapp, também possuímos uma página exclusiva da consultoria no link rawdevops.io/consulting",
-  },
-  {
     title: "Ainda tenho dúvidas...",
     description:
       "Enviar um email para rawdevops@gmail, ou falar com a gente pelo WhatsApp nos botões presente nesta página",
@@ -147,7 +141,6 @@ export default function Home() {
     <Layout>
       <HomepageHeader />
       <Courses />
-      <Customers />
       <TweetsSection />
       <main>
         <FaqPAGE list={faq} />
