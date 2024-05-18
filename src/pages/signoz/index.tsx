@@ -70,7 +70,7 @@ function HomepageHeader() {
         </MyButton>
       </ResponsiveDiv>
       <VideoContainer id="XbGYQ3kYPjs" />
-      <CountdownTimer2 />
+      {/* <CountdownTimer2 /> */}
     </header>
   );
 }
