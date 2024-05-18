@@ -83,7 +83,7 @@ function HomepageHeader() {
           }}
         >
           <TitleText>
-            Consultoria e treinamentos em{" "}
+            Networking e treinamentos em{" "}
             <strong>Infraestrutura Moderna de TI</strong>
           </TitleText>
           <SubText>
@@ -120,8 +120,7 @@ const faq = [
       beneficiando a todos os envolvidos.",
   },
   {
-    title:
-      "Qual a plataforma utilizada nos cursos?",
+    title: "Qual a plataforma utilizada nos cursos?",
     description:
       "Utilizamos a Udemy, além de ser uma plataforma amada pelos Desenvolvedores. O pagamento do curso é gerenciado pela Udemy com várias formas de pagamento e seguimos suas regras e políticas de reembolso.",
   },
@@ -131,13 +130,9 @@ const faq = [
       "Sim, após a conclusão do curso é possível gerar um certificado na plataforma da Udemy",
   },
   {
-    title: "Tenho interesse na consultoria, para implantar infraestrutura moderna na minha empresa, como proceder?",
-    description:
-      "Contate-nos através do Whatsapp, também possuímos uma página exclusiva da consultoria no link rawdevops.io/consulting",
-  },
-  {
     title: "Ainda tenho dúvidas...",
-    description: "Enviar um email para rawdevops@gmail, ou falar com a gente pelo WhatsApp nos botões presente nesta página",
+    description:
+      "Enviar um email para rawdevops@gmail, ou falar com a gente pelo WhatsApp nos botões presente nesta página",
   },
 ];
 
@@ -146,7 +141,6 @@ export default function Home() {
     <Layout>
       <HomepageHeader />
       <Courses />
-      <Customers />
       <TweetsSection />
       <main>
         <FaqPAGE list={faq} />

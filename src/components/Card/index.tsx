@@ -124,7 +124,7 @@ const Card = ({
       </TextDiv>
       <ButtonDiv>
         {available ? (
-          <MyButton href={"https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSABR"}>20% OFF</MyButton>
+          <MyButton href={"https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSMAY"}>20% OFF</MyButton>
         ) : (
           // 
           <NonAvailableButton>Em breve...</NonAvailableButton>
