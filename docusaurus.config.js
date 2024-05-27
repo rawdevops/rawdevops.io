@@ -121,12 +121,12 @@ const config = {
             position: "right",
             className: "navbar-whatsapp-link",
           },
-          {
-            to: "comunidade/",
-            activeBasePath: "comunidade/",
-            label: "Comunidade",
-            position: "left",
-          },
+          // {
+          //   to: "comunidade/",
+          //   activeBasePath: "comunidade/",
+          //   label: "Comunidade",
+          //   position: "left",
+          // },
           {
             to: "/bootcamp",
             position: "left",
