@@ -3,4 +3,8 @@ sidebar_position: 7
 sidebar_label: 'Logs'
 ---
 
-intro
+# logs
+
+## Coletando logs dos seus serviços
+
+## Logs em aplicações

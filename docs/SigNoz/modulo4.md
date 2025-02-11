@@ -1,11 +1,21 @@
 ---
 sidebar_position: 4
-sidebar_label: 'Docker e Kubernetes'
+sidebar_label: 'Infraestrutura'
 ---
 
-## Docker
+# Infraestrutura
+
+## Instalando OpenTelemetry Collector via gerenciador de pacote
 
 https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver
 
-## Kubernetes
+##  Instalando OpenTelemetry Collector via Docker
+
+## Linux monitoramento étricas e logs
+
+## Windows server monitoramento
+
+## Docker monitoramento métricas e logs
+
+## Kubernetes monitoramento métricas e logs
 

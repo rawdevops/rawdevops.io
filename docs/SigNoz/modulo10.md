@@ -3,4 +3,8 @@ sidebar_position: 10
 sidebar_label: 'Alertas'
 ---
 
-intro
+# Alertas
+
+## Alertando no slack
+
+## Alertando no email
