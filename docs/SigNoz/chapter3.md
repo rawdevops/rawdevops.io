@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: 'Infrasestrutura'
+sidebar_label: 'APM'
 ---
 
 # APM (Monitoramento de performance de aplicações)

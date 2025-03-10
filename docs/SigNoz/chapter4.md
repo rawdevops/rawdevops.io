@@ -9,9 +9,11 @@ sidebar_label: 'Infraestrutura'
 
 https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver
 
-##  Instalando OpenTelemetry Collector via Docker
+Versão do OpenTelemetry Collector Contrin que vamos utilizar no curso: `version`
 
-## Linux monitoramento étricas e logs
+## Instalando OpenTelemetry Collector via Docker
+
+## Linux monitoramento métricas e logs
 
 ## Windows server monitoramento
 
