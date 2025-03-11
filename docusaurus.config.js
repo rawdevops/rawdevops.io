@@ -86,7 +86,7 @@ const config = {
         },
         items: [
           {
-            href: "https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSOUT2",
+            href: "https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSMAR2",
             "aria-label": "Udemy",
             position: "right",
             className: "navbar-udemy-link",
@@ -198,7 +198,7 @@ const config = {
               },
               {
                 html: `
-                <a href="mailto:emailraw@gmail.com" class="buttonFooter">
+                <a href="mailto:contact@rawdevops.io" class="buttonFooter">
                   <img src="https://img.icons8.com/color/48/000000/email.png" alt="Email" />
                   Enviar um Email
                 </a>
@@ -225,7 +225,7 @@ const config = {
       announcementBar: {
         id: "desconto",
         content:
-          '20% de desconto no bootcamp usando o Cupom RAWDEVOPSOUT2 ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSOUT2">20% OFF</a>',
+          '20% de desconto no bootcamp usando o Cupom RAWDEVOPSMAR2 ou comprando pelo link -> <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/raw-devops-bootcamp/?couponCode=RAWDEVOPSMAR2">20% OFF</a>',
         backgroundColor: "#480058",
         textColor: "#FFFFFF",
         isCloseable: false,
